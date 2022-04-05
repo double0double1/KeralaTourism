@@ -1,12 +1,9 @@
  .carousel-item img {
       object-fit: cover;
-      /* max-height: 500px; */
+     
   }
 
- .breadcrumb {
-      /* color: white; */
-      /* background-color:grey; */
-      
+ .breadcrumb {      
       margin: 1em 0 1em 0;
       padding-left: 1em;
   }px
@@ -28,15 +25,10 @@
 #dist {
     background-image: url("../images/manyu-varma-ef3A5EDR7Jk-unsplash.jpg");
 }
-/* 
-#title {
-    height: 30rem;
-
-    background-image: url("../images/pic345 .jpg");
-} */
 
 .maintxt {
     background-image: url(../images/pic-dt-1.jpg);
     background-size: cover;
     height: 14rem;
 }
+
