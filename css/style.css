@@ -1,0 +1,42 @@
+ .carousel-item img {
+      object-fit: cover;
+      /* max-height: 500px; */
+  }
+
+ .breadcrumb {
+      /* color: white; */
+      /* background-color:grey; */
+      
+      margin: 1em 0 1em 0;
+      padding-left: 1em;
+  }px
+
+.no-dec {
+    text-decoration: none;
+}
+
+#image-1 {
+    width: 34rem;
+    height: 25em;
+    object-fit: cover;
+}
+
+#navbarDropdown::after {        /* Remove the arrow after button */
+    content: none;
+}
+
+#dist {
+    background-image: url("../images/manyu-varma-ef3A5EDR7Jk-unsplash.jpg");
+}
+/* 
+#title {
+    height: 30rem;
+
+    background-image: url("../images/pic345 .jpg");
+} */
+
+.maintxt {
+    background-image: url(../images/pic-dt-1.jpg);
+    background-size: cover;
+    height: 14rem;
+}
