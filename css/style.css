@@ -36,3 +36,46 @@
     opacity: 0.6 ;
     border: 4px solid black;
 }
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 15rem;
+    background-color: #555;
+    color: #fff;
+    font-size: smaller;
+    line-height: 1rem;
+    border-radius: 6px;
+    padding: 0.5rem 0.5rem 0 0.5rem ;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 200%;
+    margin-left: -5rem;
+    opacity: 0.9;
+  }
+
+  /* Show Popup */
+  .popup .show {
+    visibility: visible;
+  }
+
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 19%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
