@@ -115,7 +115,7 @@
                     <h3 class=" pb-md-0 mb-md-5 px-md-2">Sign Up</h3>
                     <h5 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Create an account and join the community of people who admire Kerala</h5>
         
-                    <form class="px-md-2">
+                    <form class="px-md-2" action="#" id="signupform">
         
                         <div class="form-outline mb-4">
                             <label  class="form-label" for="Name">Name</label>
@@ -137,26 +137,26 @@
             
                                 <div class="form-outline mb-4">                                 
                                     
-                                    <label class="form-label" for="userPass">Password&nbsp; </label>
+                                    <label class="form-label" for="userPass" >Password&nbsp; </label>
                                     <!-- info button -->
                                     <div class="popup"><i class="fa-solid fa-circle-info" onmouseover="show()" onmouseout="hide()"></i> 
                                         <span class="popuptext " id="myPopup">Requirements:&nbsp;<br> 
                                             <ul>
                                                 <li>Minimum 8 characters</li>
-                                                <li>At least one uppercase</li>
-                                                <li>At least one lower case</li>
+                                                <li>At least one uppercase character</li>
+                                                <li>At least one lower case character</li>
                                                 <li>At least one number</li>
                                         </ul>
                                     </span>
                                     </div>
-                                    <input placeholder="Choose Wisely" type="password" id="userPassRepeat" class="form-control" />
+                                    <input placeholder="Choose Wisely" type="password" id="userPass" class="form-control" required />
 
                                     
                                 </div>
 
                                 <div class="form-outline mb-4">
-                                    <label class="form-label" for="userPass">Repeat Password</label>
-                                    <input placeholder="Sure?" type="password" id="userPass" class="form-control" />
+                                    <label class="form-label" for="userPassRepeat" id="wd-repeat">Repeat Password</label>
+                                    <input required placeholder="Sure?" type="password" id="userPassRepeat" class="form-control" />
                                 </div>
             
                             </div>

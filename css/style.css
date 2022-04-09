@@ -47,7 +47,7 @@
   /* The actual popup */
   .popup .popuptext {
     visibility: hidden;
-    width: 15rem;
+    width: 17rem;
     background-color: #555;
     color: #fff;
     font-size: smaller;
@@ -73,7 +73,7 @@
     content: "";
     position: absolute;
     top: 100%;
-    left: 19%;
+    left: 23%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
