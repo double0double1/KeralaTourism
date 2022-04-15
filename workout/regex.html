@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form id="myForm" action="#" onsubmit="compute()">
+        <label for="numInput">Enter limit</label>
+        <br>
+        <input type="text" id="numInput">
+       
+        <input type="submit">
+    </form>
+
+    <script>
+        function compute() {
+
+            numInput = document.getElementById("numInput").value;
+
+            let rex = /^([0-9]{3})/;
+
+            if (rex.test(numInput)) {
+                console.log("done")
+            } else {
+                console.log("not done")
+            }
+
+        }
+        
+
+    </script>
+</body>
+</html>
