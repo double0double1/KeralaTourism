@@ -1,4 +1,4 @@
-// Popup
+// Password Popup
 
 // Popup Toggle
 function show() {
@@ -37,12 +37,13 @@ function validateMail() {
 
     if(regexMail.test(eMail.value)) {
         console.log("Email ID is in correct format");
-        eMail.classList.remove("border", "border-danger");
-        eMail.classList.add("border", "border-success");
+        eMail.classList.remove("border", "border-danger");       //border colors are changed by toggling bootstrap classes
         return true;
     } else {
         console.log("invalid Email ID");
         eMail.classList.add("border", "border-danger");
+        eMail.setCustomValidity('Invalid Email ID'); 
+        eMail.reportValidity();  
         return false;
     }
     
@@ -55,15 +56,15 @@ function validatepwd() {
   
     if (pwd.value != pwdrpt.value) {
         console.log("Password and Repeat Password doesn't match");
-        pwd.classList.add("border", "border-danger");
-        pwdrpt.classList.add("border", "border-danger");
+        // pwd.classList.add("border", "border-danger","border-2");
+        pwdrpt.classList.add("border", "border-danger","border");
+        pwdrpt.setCustomValidity('Password and Repeat Password should match');
+        pwdrpt.reportValidity();     
         return false;
     }
     console.log("Passwords match");
-    pwd.classList.remove("border", "border-danger");
     pwdrpt.classList.remove("border", "border-danger");
-    pwd.classList.add("border", "border-success");
-    pwdrpt.classList.add("border", "border-success");
+    pwdrpt.setCustomValidity('');
     return true;
   }
 
@@ -74,14 +75,49 @@ function validateMobile() {
     if(regexMob.test(mobileNumber.value)) {
         console.log("mobile number is in correct format");
         mobileNumber.classList.remove("border", "border-danger");
-        mobileNumber.classList.add("border", "border-success");
         return true;
     }
     console.log("invalid mobile number");
     mobileNumber.classList.add("border", "border-danger");
+    mobileNumber.setCustomValidity('Invalid Mobile Number'); 
+    mobileNumber.reportValidity();  
     return false;
     
 }
 
 
 //-------------------------------------------------------------------------------
+
+
+// Mobile Number Error Popup
+
+// Popup Toggle
+function mobilePopupshow() {
+    var mobilePopup = document.getElementById("mobilePopup");
+    mobilePopup.style.visibility = "visible";
+  }
+
+function mobilePopuphide() {
+    var mobilePopup = document.getElementById("mobilePopup");
+    mobilePopup.style.visibility = "hidden";
+}
+
+
+// Password Strength Check
+
+function pwdStrength() {
+    let pwdValue = document.getElementById("userPass");
+    let pb1 = document.getElementById("pb1");
+    let pb2 = document.getElementById("pb2");
+    let pb3 = document.getElementById("pb3");
+    let strengthValue = document.getElementById("strengthValue");
+    // console.log(pwdValue.value);
+    
+    if(pwdValue.value != "") {
+        pb1.setAttribute("style", "width: 20%");
+        strengthValue.innerText = "Weak"
+    } else {
+        pb1.removeAttribute("style"); 
+        strengthValue.innerText = ""
+    }
+}   
