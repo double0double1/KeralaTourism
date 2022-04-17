@@ -53,7 +53,7 @@
     font-size: smaller;
     line-height: 1rem;
     border-radius: 5px;
-    border: 2px solid #fd7e14;
+    border: 3px solid #59359a;
     padding: 0.5rem 0.5rem 0 0.8rem ;
     position: absolute;
     z-index: 1;
@@ -75,9 +75,9 @@
     border-color: #555 transparent transparent transparent;
   }
 
- #mobilePopup {
+#mobilePopup {
     visibility: hidden;
-    width: 17rem;
+    width: 14rem;
     background-color: #555;
     color: #fff;
     font-size: smaller;
@@ -91,7 +91,7 @@
     bottom: 2rem;
     left: 1.7rem;
     margin-left: -5rem;
-    border: 2px solid #fd7e14;
+    border: 3px solid #59359a;
     opacity: 0.85;
   }
 
@@ -110,4 +110,31 @@
     border-width: 7px;
     border-style: solid;
     border-color: #555 transparent transparent transparent;
+  }
+
+  /* Change Password Popup Bullet */
+
+  .greenTick::before {
+    content: "\2713"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgb(11, 245, 11); 
+    font-weight: bold; 
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em; 
+  }
+
+  #userPassRepeat::after {
+    content: "\2713"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgb(11, 245, 11); 
+    font-weight: bold; 
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em; 
+  }
+
+  .checkSymbol {
+    color: rgb(0, 199, 0); 
+    font-weight: 900;
+    font-size: large;
+    visibility: hidden;
   }
